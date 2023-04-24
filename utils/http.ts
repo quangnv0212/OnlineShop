@@ -37,7 +37,7 @@ export class Http {
           this.accessToken = "";
           clearCookies();
         }
-        return response;
+        return response.data;
       },
       (error) => {
         console.log(error);
